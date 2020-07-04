@@ -17,7 +17,8 @@ namespace QL_ChanNuoi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new form_NhapVatNuoi());
+            Application.Run(new form_BenhVatNuoi());
         }
+
     }
 }

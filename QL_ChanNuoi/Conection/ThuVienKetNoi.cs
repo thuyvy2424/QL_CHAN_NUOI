@@ -16,7 +16,7 @@ namespace QL_ChanNuoi.Conection
         SqlDataAdapter VG_DataAdapter;
         SqlCommand VG_SqlCommand;
 
-        public static string VG_StringConnection = "Data Source=DESKTOP-7BVIHS4\\SQLDEV2019;Initial Catalog=QL_ChanNuoi;User ID=sa;password=123456;";
+        public static string VG_StringConnection = "Data Source=DESKTOP-U7ERBM5;Initial Catalog=QL_CHANNUOI;Integrated Security=True";
 
         // Hàm mở Connection lên, nếu mở thành công thì trả về True
         public static bool OpenConnection()
