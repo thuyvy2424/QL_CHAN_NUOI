@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox_MaPhieuNhap = new System.Windows.Forms.GroupBox();
+            this.btn_SuaPhieuNhap = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_XoaPhieuNhap = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_ThemPhieuNhap = new DevExpress.XtraEditors.SimpleButton();
             this.label13 = new System.Windows.Forms.Label();
             this.txt_DonGiaDSPN = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -48,8 +51,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox_MaPN_VatNuoi = new System.Windows.Forms.TextBox();
             this.groupBox_DanhSachVatNuoi = new System.Windows.Forms.GroupBox();
+            this.textBox_TrongLuong = new System.Windows.Forms.TextBox();
+            this.btn_LuuVatNuoi = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_SuaVatNuoi = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_XoaVatNuoi = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_ThemVatNuoi = new DevExpress.XtraEditors.SimpleButton();
             this.dataGridView_DanhSachVatNuoi = new System.Windows.Forms.DataGridView();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.cbo_GioiTinhVatNuoi = new System.Windows.Forms.ComboBox();
             this.dateTimePicker_NgayVaoChuong = new System.Windows.Forms.DateTimePicker();
             this.textBox_Chuong = new System.Windows.Forms.TextBox();
@@ -60,14 +67,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.btn_ThemPhieuNhap = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_XoaPhieuNhap = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_SuaPhieuNhap = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_ThemVatNuoi = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_XoaVatNuoi = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_SuaVatNuoi = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_LuuVatNuoi = new DevExpress.XtraEditors.SimpleButton();
-            this.textBox_TrongLuong = new System.Windows.Forms.TextBox();
+            this.cbo_GiongVatNuoi = new System.Windows.Forms.ComboBox();
             this.groupBox_MaPhieuNhap.SuspendLayout();
             this.tab_DanhSach.SuspendLayout();
             this.tabDanhSachChuaNhap.SuspendLayout();
@@ -103,6 +103,54 @@
             this.groupBox_MaPhieuNhap.TabIndex = 0;
             this.groupBox_MaPhieuNhap.TabStop = false;
             this.groupBox_MaPhieuNhap.Text = "Danh Sách Phiếu Nhập";
+            // 
+            // btn_SuaPhieuNhap
+            // 
+            this.btn_SuaPhieuNhap.Appearance.BackColor = System.Drawing.Color.Gainsboro;
+            this.btn_SuaPhieuNhap.Appearance.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_SuaPhieuNhap.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_SuaPhieuNhap.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SuaPhieuNhap.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.btn_SuaPhieuNhap.Appearance.Options.UseBackColor = true;
+            this.btn_SuaPhieuNhap.Appearance.Options.UseBorderColor = true;
+            this.btn_SuaPhieuNhap.Appearance.Options.UseFont = true;
+            this.btn_SuaPhieuNhap.Location = new System.Drawing.Point(550, 307);
+            this.btn_SuaPhieuNhap.Name = "btn_SuaPhieuNhap";
+            this.btn_SuaPhieuNhap.Size = new System.Drawing.Size(146, 63);
+            this.btn_SuaPhieuNhap.TabIndex = 18;
+            this.btn_SuaPhieuNhap.Text = "Sửa";
+            // 
+            // btn_XoaPhieuNhap
+            // 
+            this.btn_XoaPhieuNhap.Appearance.BackColor = System.Drawing.Color.Gainsboro;
+            this.btn_XoaPhieuNhap.Appearance.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_XoaPhieuNhap.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_XoaPhieuNhap.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_XoaPhieuNhap.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.btn_XoaPhieuNhap.Appearance.Options.UseBackColor = true;
+            this.btn_XoaPhieuNhap.Appearance.Options.UseBorderColor = true;
+            this.btn_XoaPhieuNhap.Appearance.Options.UseFont = true;
+            this.btn_XoaPhieuNhap.Location = new System.Drawing.Point(550, 189);
+            this.btn_XoaPhieuNhap.Name = "btn_XoaPhieuNhap";
+            this.btn_XoaPhieuNhap.Size = new System.Drawing.Size(146, 63);
+            this.btn_XoaPhieuNhap.TabIndex = 17;
+            this.btn_XoaPhieuNhap.Text = "Xóa";
+            // 
+            // btn_ThemPhieuNhap
+            // 
+            this.btn_ThemPhieuNhap.Appearance.BackColor = System.Drawing.Color.Gainsboro;
+            this.btn_ThemPhieuNhap.Appearance.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_ThemPhieuNhap.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_ThemPhieuNhap.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ThemPhieuNhap.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.btn_ThemPhieuNhap.Appearance.Options.UseBackColor = true;
+            this.btn_ThemPhieuNhap.Appearance.Options.UseBorderColor = true;
+            this.btn_ThemPhieuNhap.Appearance.Options.UseFont = true;
+            this.btn_ThemPhieuNhap.Location = new System.Drawing.Point(550, 63);
+            this.btn_ThemPhieuNhap.Name = "btn_ThemPhieuNhap";
+            this.btn_ThemPhieuNhap.Size = new System.Drawing.Size(146, 63);
+            this.btn_ThemPhieuNhap.TabIndex = 16;
+            this.btn_ThemPhieuNhap.Text = "Thêm\r\n";
             // 
             // label13
             // 
@@ -272,13 +320,13 @@
             // 
             // groupBox_DanhSachVatNuoi
             // 
+            this.groupBox_DanhSachVatNuoi.Controls.Add(this.cbo_GiongVatNuoi);
             this.groupBox_DanhSachVatNuoi.Controls.Add(this.textBox_TrongLuong);
             this.groupBox_DanhSachVatNuoi.Controls.Add(this.btn_LuuVatNuoi);
             this.groupBox_DanhSachVatNuoi.Controls.Add(this.btn_SuaVatNuoi);
             this.groupBox_DanhSachVatNuoi.Controls.Add(this.btn_XoaVatNuoi);
             this.groupBox_DanhSachVatNuoi.Controls.Add(this.btn_ThemVatNuoi);
             this.groupBox_DanhSachVatNuoi.Controls.Add(this.dataGridView_DanhSachVatNuoi);
-            this.groupBox_DanhSachVatNuoi.Controls.Add(this.textBox5);
             this.groupBox_DanhSachVatNuoi.Controls.Add(this.cbo_GioiTinhVatNuoi);
             this.groupBox_DanhSachVatNuoi.Controls.Add(this.dateTimePicker_NgayVaoChuong);
             this.groupBox_DanhSachVatNuoi.Controls.Add(this.textBox_Chuong);
@@ -300,6 +348,77 @@
             this.groupBox_DanhSachVatNuoi.TabStop = false;
             this.groupBox_DanhSachVatNuoi.Text = "Danh Sách Vật Nuôi";
             // 
+            // textBox_TrongLuong
+            // 
+            this.textBox_TrongLuong.Location = new System.Drawing.Point(214, 244);
+            this.textBox_TrongLuong.Name = "textBox_TrongLuong";
+            this.textBox_TrongLuong.Size = new System.Drawing.Size(130, 44);
+            this.textBox_TrongLuong.TabIndex = 23;
+            // 
+            // btn_LuuVatNuoi
+            // 
+            this.btn_LuuVatNuoi.Appearance.BackColor = System.Drawing.Color.Gainsboro;
+            this.btn_LuuVatNuoi.Appearance.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_LuuVatNuoi.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_LuuVatNuoi.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_LuuVatNuoi.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.btn_LuuVatNuoi.Appearance.Options.UseBackColor = true;
+            this.btn_LuuVatNuoi.Appearance.Options.UseBorderColor = true;
+            this.btn_LuuVatNuoi.Appearance.Options.UseFont = true;
+            this.btn_LuuVatNuoi.Location = new System.Drawing.Point(320, 361);
+            this.btn_LuuVatNuoi.Name = "btn_LuuVatNuoi";
+            this.btn_LuuVatNuoi.Size = new System.Drawing.Size(146, 63);
+            this.btn_LuuVatNuoi.TabIndex = 22;
+            this.btn_LuuVatNuoi.Text = "Lưu";
+            // 
+            // btn_SuaVatNuoi
+            // 
+            this.btn_SuaVatNuoi.Appearance.BackColor = System.Drawing.Color.Gainsboro;
+            this.btn_SuaVatNuoi.Appearance.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_SuaVatNuoi.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_SuaVatNuoi.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SuaVatNuoi.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.btn_SuaVatNuoi.Appearance.Options.UseBackColor = true;
+            this.btn_SuaVatNuoi.Appearance.Options.UseBorderColor = true;
+            this.btn_SuaVatNuoi.Appearance.Options.UseFont = true;
+            this.btn_SuaVatNuoi.Location = new System.Drawing.Point(821, 361);
+            this.btn_SuaVatNuoi.Name = "btn_SuaVatNuoi";
+            this.btn_SuaVatNuoi.Size = new System.Drawing.Size(146, 63);
+            this.btn_SuaVatNuoi.TabIndex = 21;
+            this.btn_SuaVatNuoi.Text = "Sửa";
+            // 
+            // btn_XoaVatNuoi
+            // 
+            this.btn_XoaVatNuoi.Appearance.BackColor = System.Drawing.Color.Gainsboro;
+            this.btn_XoaVatNuoi.Appearance.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_XoaVatNuoi.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_XoaVatNuoi.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_XoaVatNuoi.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.btn_XoaVatNuoi.Appearance.Options.UseBackColor = true;
+            this.btn_XoaVatNuoi.Appearance.Options.UseBorderColor = true;
+            this.btn_XoaVatNuoi.Appearance.Options.UseFont = true;
+            this.btn_XoaVatNuoi.Location = new System.Drawing.Point(560, 361);
+            this.btn_XoaVatNuoi.Name = "btn_XoaVatNuoi";
+            this.btn_XoaVatNuoi.Size = new System.Drawing.Size(146, 63);
+            this.btn_XoaVatNuoi.TabIndex = 20;
+            this.btn_XoaVatNuoi.Text = "Xóa";
+            // 
+            // btn_ThemVatNuoi
+            // 
+            this.btn_ThemVatNuoi.Appearance.BackColor = System.Drawing.Color.Gainsboro;
+            this.btn_ThemVatNuoi.Appearance.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_ThemVatNuoi.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_ThemVatNuoi.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ThemVatNuoi.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.btn_ThemVatNuoi.Appearance.Options.UseBackColor = true;
+            this.btn_ThemVatNuoi.Appearance.Options.UseBorderColor = true;
+            this.btn_ThemVatNuoi.Appearance.Options.UseFont = true;
+            this.btn_ThemVatNuoi.Location = new System.Drawing.Point(61, 361);
+            this.btn_ThemVatNuoi.Name = "btn_ThemVatNuoi";
+            this.btn_ThemVatNuoi.Size = new System.Drawing.Size(146, 63);
+            this.btn_ThemVatNuoi.TabIndex = 19;
+            this.btn_ThemVatNuoi.Text = "Thêm";
+            // 
             // dataGridView_DanhSachVatNuoi
             // 
             this.dataGridView_DanhSachVatNuoi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -309,13 +428,6 @@
             this.dataGridView_DanhSachVatNuoi.RowTemplate.Height = 33;
             this.dataGridView_DanhSachVatNuoi.Size = new System.Drawing.Size(1166, 520);
             this.dataGridView_DanhSachVatNuoi.TabIndex = 15;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(879, 239);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(189, 44);
-            this.textBox5.TabIndex = 14;
             // 
             // cbo_GioiTinhVatNuoi
             // 
@@ -405,124 +517,17 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Số tai:";
             // 
-            // btn_ThemPhieuNhap
+            // cbo_GiongVatNuoi
             // 
-            this.btn_ThemPhieuNhap.Appearance.BackColor = System.Drawing.Color.Gainsboro;
-            this.btn_ThemPhieuNhap.Appearance.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_ThemPhieuNhap.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_ThemPhieuNhap.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ThemPhieuNhap.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.btn_ThemPhieuNhap.Appearance.Options.UseBackColor = true;
-            this.btn_ThemPhieuNhap.Appearance.Options.UseBorderColor = true;
-            this.btn_ThemPhieuNhap.Appearance.Options.UseFont = true;
-            this.btn_ThemPhieuNhap.Location = new System.Drawing.Point(550, 63);
-            this.btn_ThemPhieuNhap.Name = "btn_ThemPhieuNhap";
-            this.btn_ThemPhieuNhap.Size = new System.Drawing.Size(146, 63);
-            this.btn_ThemPhieuNhap.TabIndex = 16;
-            this.btn_ThemPhieuNhap.Text = "Thêm\r\n";
-            // 
-            // btn_XoaPhieuNhap
-            // 
-            this.btn_XoaPhieuNhap.Appearance.BackColor = System.Drawing.Color.Gainsboro;
-            this.btn_XoaPhieuNhap.Appearance.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_XoaPhieuNhap.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_XoaPhieuNhap.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_XoaPhieuNhap.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.btn_XoaPhieuNhap.Appearance.Options.UseBackColor = true;
-            this.btn_XoaPhieuNhap.Appearance.Options.UseBorderColor = true;
-            this.btn_XoaPhieuNhap.Appearance.Options.UseFont = true;
-            this.btn_XoaPhieuNhap.Location = new System.Drawing.Point(550, 189);
-            this.btn_XoaPhieuNhap.Name = "btn_XoaPhieuNhap";
-            this.btn_XoaPhieuNhap.Size = new System.Drawing.Size(146, 63);
-            this.btn_XoaPhieuNhap.TabIndex = 17;
-            this.btn_XoaPhieuNhap.Text = "Xóa";
-            // 
-            // btn_SuaPhieuNhap
-            // 
-            this.btn_SuaPhieuNhap.Appearance.BackColor = System.Drawing.Color.Gainsboro;
-            this.btn_SuaPhieuNhap.Appearance.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_SuaPhieuNhap.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_SuaPhieuNhap.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_SuaPhieuNhap.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.btn_SuaPhieuNhap.Appearance.Options.UseBackColor = true;
-            this.btn_SuaPhieuNhap.Appearance.Options.UseBorderColor = true;
-            this.btn_SuaPhieuNhap.Appearance.Options.UseFont = true;
-            this.btn_SuaPhieuNhap.Location = new System.Drawing.Point(550, 307);
-            this.btn_SuaPhieuNhap.Name = "btn_SuaPhieuNhap";
-            this.btn_SuaPhieuNhap.Size = new System.Drawing.Size(146, 63);
-            this.btn_SuaPhieuNhap.TabIndex = 18;
-            this.btn_SuaPhieuNhap.Text = "Sửa";
-            // 
-            // btn_ThemVatNuoi
-            // 
-            this.btn_ThemVatNuoi.Appearance.BackColor = System.Drawing.Color.Gainsboro;
-            this.btn_ThemVatNuoi.Appearance.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_ThemVatNuoi.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_ThemVatNuoi.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ThemVatNuoi.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.btn_ThemVatNuoi.Appearance.Options.UseBackColor = true;
-            this.btn_ThemVatNuoi.Appearance.Options.UseBorderColor = true;
-            this.btn_ThemVatNuoi.Appearance.Options.UseFont = true;
-            this.btn_ThemVatNuoi.Location = new System.Drawing.Point(61, 361);
-            this.btn_ThemVatNuoi.Name = "btn_ThemVatNuoi";
-            this.btn_ThemVatNuoi.Size = new System.Drawing.Size(146, 63);
-            this.btn_ThemVatNuoi.TabIndex = 19;
-            this.btn_ThemVatNuoi.Text = "Thêm";
-            // 
-            // btn_XoaVatNuoi
-            // 
-            this.btn_XoaVatNuoi.Appearance.BackColor = System.Drawing.Color.Gainsboro;
-            this.btn_XoaVatNuoi.Appearance.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_XoaVatNuoi.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_XoaVatNuoi.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_XoaVatNuoi.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.btn_XoaVatNuoi.Appearance.Options.UseBackColor = true;
-            this.btn_XoaVatNuoi.Appearance.Options.UseBorderColor = true;
-            this.btn_XoaVatNuoi.Appearance.Options.UseFont = true;
-            this.btn_XoaVatNuoi.Location = new System.Drawing.Point(560, 361);
-            this.btn_XoaVatNuoi.Name = "btn_XoaVatNuoi";
-            this.btn_XoaVatNuoi.Size = new System.Drawing.Size(146, 63);
-            this.btn_XoaVatNuoi.TabIndex = 20;
-            this.btn_XoaVatNuoi.Text = "Xóa";
-            // 
-            // btn_SuaVatNuoi
-            // 
-            this.btn_SuaVatNuoi.Appearance.BackColor = System.Drawing.Color.Gainsboro;
-            this.btn_SuaVatNuoi.Appearance.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_SuaVatNuoi.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_SuaVatNuoi.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_SuaVatNuoi.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.btn_SuaVatNuoi.Appearance.Options.UseBackColor = true;
-            this.btn_SuaVatNuoi.Appearance.Options.UseBorderColor = true;
-            this.btn_SuaVatNuoi.Appearance.Options.UseFont = true;
-            this.btn_SuaVatNuoi.Location = new System.Drawing.Point(821, 361);
-            this.btn_SuaVatNuoi.Name = "btn_SuaVatNuoi";
-            this.btn_SuaVatNuoi.Size = new System.Drawing.Size(146, 63);
-            this.btn_SuaVatNuoi.TabIndex = 21;
-            this.btn_SuaVatNuoi.Text = "Sửa";
-            // 
-            // btn_LuuVatNuoi
-            // 
-            this.btn_LuuVatNuoi.Appearance.BackColor = System.Drawing.Color.Gainsboro;
-            this.btn_LuuVatNuoi.Appearance.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_LuuVatNuoi.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_LuuVatNuoi.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_LuuVatNuoi.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.btn_LuuVatNuoi.Appearance.Options.UseBackColor = true;
-            this.btn_LuuVatNuoi.Appearance.Options.UseBorderColor = true;
-            this.btn_LuuVatNuoi.Appearance.Options.UseFont = true;
-            this.btn_LuuVatNuoi.Location = new System.Drawing.Point(320, 361);
-            this.btn_LuuVatNuoi.Name = "btn_LuuVatNuoi";
-            this.btn_LuuVatNuoi.Size = new System.Drawing.Size(146, 63);
-            this.btn_LuuVatNuoi.TabIndex = 22;
-            this.btn_LuuVatNuoi.Text = "Lưu";
-            // 
-            // textBox_TrongLuong
-            // 
-            this.textBox_TrongLuong.Location = new System.Drawing.Point(214, 244);
-            this.textBox_TrongLuong.Name = "textBox_TrongLuong";
-            this.textBox_TrongLuong.Size = new System.Drawing.Size(130, 44);
-            this.textBox_TrongLuong.TabIndex = 23;
+            this.cbo_GiongVatNuoi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbo_GiongVatNuoi.FormattingEnabled = true;
+            this.cbo_GiongVatNuoi.Items.AddRange(new object[] {
+            "Đực",
+            "Cái"});
+            this.cbo_GiongVatNuoi.Location = new System.Drawing.Point(886, 244);
+            this.cbo_GiongVatNuoi.Name = "cbo_GiongVatNuoi";
+            this.cbo_GiongVatNuoi.Size = new System.Drawing.Size(209, 44);
+            this.cbo_GiongVatNuoi.TabIndex = 24;
             // 
             // form_NhapVatNuoi
             // 
@@ -535,6 +540,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "form_NhapVatNuoi";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.form_NhapVatNuoi_Load);
             this.groupBox_MaPhieuNhap.ResumeLayout(false);
             this.groupBox_MaPhieuNhap.PerformLayout();
             this.tab_DanhSach.ResumeLayout(false);
@@ -570,7 +576,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox_MaPN_VatNuoi;
         private System.Windows.Forms.GroupBox groupBox_DanhSachVatNuoi;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.ComboBox cbo_GioiTinhVatNuoi;
         private System.Windows.Forms.DateTimePicker dateTimePicker_NgayVaoChuong;
         private System.Windows.Forms.TextBox textBox_Chuong;
@@ -592,5 +597,6 @@
         private DevExpress.XtraEditors.SimpleButton btn_ThemVatNuoi;
         private DevExpress.XtraEditors.SimpleButton btn_LuuVatNuoi;
         private System.Windows.Forms.TextBox textBox_TrongLuong;
+        private System.Windows.Forms.ComboBox cbo_GiongVatNuoi;
     }
 }
