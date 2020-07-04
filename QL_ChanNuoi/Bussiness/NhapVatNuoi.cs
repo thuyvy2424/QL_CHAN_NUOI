@@ -30,17 +30,21 @@ namespace QL_ChanNuoi.Bussiness
         ThuVienKetNoi ketnoi = new ThuVienKetNoi();
         public object Load_GiongVN_Cbo()
         {
-            return ketnoi.GetTable("select TenGiong from GiongVatNuoi");
+            return ketnoi.GetTable("select MaGiong from GiongVatNuoi");
         }
         public object Load_NCC_Cbo()
         {
-            return ketnoi.GetTable("select Ten_NCC from NhaCungCap");
+            return ketnoi.GetTable("select Ma_NCC, Ten_NCC from NhaCungCap");
         }
         public DataTable LoadTable(string loai)
         {
             return ketnoi.GetTable("select * from PhieuNhapVatNuoi");
         }
 
+        public DataTable LoadTable_VatNuoi (string vn)
+        {
+            return ketnoi.GetTable("select * from VatNuoi");
+        }
         public DataTable LoadTable_PhieuNhapChuaNhap (string pn)
         {
             return ketnoi.GetTable("");
