@@ -13,7 +13,7 @@ namespace QL_ChanNuoi.Bussiness
     {
         ThuVienKetNoi ketnoi = new ThuVienKetNoi();
 
-        public DataTable LoadTable(string loai)
+        public DataTable LoadTable()
         {
             return ketnoi.GetTable("select * from BenhVatNuoi");
         }

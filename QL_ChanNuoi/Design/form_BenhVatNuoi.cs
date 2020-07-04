@@ -23,7 +23,7 @@ namespace QL_ChanNuoi.Design
         }
         public void LoadDL()
         {
-            GV_BenhVatNuoi.DataSource = bvn.LoadTable("Select * from BenhVatNuoi");
+            GV_BenhVatNuoi.DataSource = bvn.LoadTable();
         }
         private void toolStripButton_Them_Click(object sender, EventArgs e)
 
